@@ -72,7 +72,7 @@ export default function ProjectDetail() {
 
         {/* Hero image */}
         <AnimatedSection delay={0.1}>
-          <div className="aspect-[16/9] bg-surface-alt rounded-lg border border-border flex items-center justify-center mb-10">
+          <div className="aspect-video bg-surface-alt rounded-lg border border-border flex items-center justify-center mb-10">
             {project.heroImage ? (
               <img
                 src={project.heroImage}

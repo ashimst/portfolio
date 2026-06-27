@@ -71,7 +71,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
-            className="hidden md:flex w-48 h-48 rounded-full border border-border bg-surface/80 backdrop-blur-sm items-center justify-center shrink-0 shadow-lg shadow-black/[0.08] p-1"
+            className="hidden md:flex w-48 h-48 rounded-full border border-border bg-surface/80 backdrop-blur-sm items-center justify-center shrink-0 shadow-lg shadow-black/8 p-1"
           >
             {site.profileImage ? (
               <img
@@ -97,7 +97,7 @@ export default function Home() {
             { value: projects.length, label: 'Projects', icon: 'FolderOpen' },
             { value: 'President', label: 'KUAIC', icon: 'Award', isText: true },
           ].map((stat, i) => (
-            <div key={i} className="glass-card p-4 flex items-center gap-3 min-h-[88px]">
+            <div key={i} className="glass-card p-4 flex items-center gap-3 min-h-22">
               <div className="w-9 h-9 rounded-lg bg-surface-alt/80 border border-border flex items-center justify-center shrink-0">
                 {getIcon(stat.icon, { size: 16, className: 'text-text-tertiary' })}
               </div>

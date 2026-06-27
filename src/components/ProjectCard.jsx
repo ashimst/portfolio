@@ -10,7 +10,7 @@ export default function ProjectCard({ project }) {
       className="group block border border-border rounded-lg overflow-hidden hover:border-border-strong transition-all duration-200"
     >
       {/* Hero area */}
-      <div className="aspect-[16/9] bg-surface-alt flex items-center justify-center border-b border-border">
+      <div className="aspect-video bg-surface-alt flex items-center justify-center border-b border-border">
         {project.heroImage ? (
           <img
             src={project.heroImage}

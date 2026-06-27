@@ -26,9 +26,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
-          cache-dependency-path: package-lock.json
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
@@ -38,10 +37,6 @@ jobs:
 
       - name: Build app
         run: npm run build
-        env:
-          GITHUB_ACTIONS: true
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          VITE_BASE_PATH: /portfolio/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -50,14 +45,12 @@ jobs:
 
   deploy:
     needs: build
+
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
 
     steps:
       - name: Deploy to GitHub Pages

@@ -97,7 +97,7 @@ export default function Home() {
             { value: projects.length, label: 'Projects', icon: 'FolderOpen' },
             { value: 'President', label: 'KUAIC', icon: 'Award', isText: true },
           ].map((stat, i) => (
-            <div key={i} className="glass-card p-4 flex items-center gap-3 min-h-22">
+            <div key={i} className="glass-card p-4 flex items-center gap-3 min-h-20">
               <div className="w-9 h-9 rounded-lg bg-surface-alt/80 border border-border flex items-center justify-center shrink-0">
                 {getIcon(stat.icon, { size: 16, className: 'text-text-tertiary' })}
               </div>

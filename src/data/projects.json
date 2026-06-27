@@ -1,38 +1,96 @@
 [
-  {
-    "id": "automated-hydroponics-ai",
-    "slug": "automated-hydroponics-ai",
-    "title": "Automated Hydroponics AI",
-    "subtitle": "An Intelligent Reinforcement Learning Powered Hydroponics Platform",
-    "featured": true,
-    "status": "Active",
-    "year": 2025,
-    "category": "Cyber-Physical Systems",
-    "tags": [
-      "RL",
-      "Computer Vision",
-      "IoT",
-      "FastAPI",
-      "Flutter",
-      "ESP32",
-      "Hydroponics"
-    ],
-    "shortDescription": "A complete AI-driven hydroponics platform integrating IoT, computer vision, reinforcement learning and cloud infrastructure for autonomous controlled environment agriculture.",
-    "longDescription": "## Overview\n\nA complete AI-driven hydroponics platform integrating IoT, computer vision, reinforcement learning and cloud infrastructure for autonomous controlled environment agriculture.\n\n## Status\n\nActive\n\n## Research Areas\n\nReinforcement Learning, Computer Vision, IoT\n\n## Paper Status\n\nIn Preparation",
-    "heroImage": "/hydroponics.jpg",
-    "gallery": ["/hydroponics.jpg"],
-    "technologies": [],
-    "github": null,
-    "paper": null,
-    "poster": null,
-    "presentation": null,
-    "video": null,
-    "website": null,
-    "architectureDiagram": null,
-    "dataset": null,
-    "futureWork": null,
-    "downloads": []
-  },
+{
+  "id": "automated-hydroponics-ai",
+  "slug": "automated-hydroponics-ai",
+  "title": "Automated Hydroponics AI",
+  "subtitle": "An Intelligent Reinforcement Learning Powered Hydroponics Platform",
+  "featured": true,
+  "status": "Active Development",
+  "year": 2025,
+  "category": "Cyber-Physical Systems",
+  "tags": [
+    "Reinforcement Learning",
+    "Computer Vision",
+    "IoT",
+    "Edge AI",
+    "FastAPI",
+    "Flutter",
+    "ESP32",
+    "RabbitMQ",
+    "Redis",
+    "MongoDB",
+    "Hydroponics"
+  ],
+  "shortDescription": "An end-to-end AI-driven hydroponics platform combining IoT sensing, edge computer vision, reinforcement learning and cloud-native infrastructure for autonomous controlled environment agriculture.",
+
+  "longDescription": "## Overview\n\nAutomated Hydroponics AI is an intelligent cyber-physical platform for controlled environment agriculture. The system combines distributed IoT devices, edge computer vision, reinforcement learning, cloud services and a cross-platform mobile application to continuously monitor and optimize hydroponic crop production.\n\nUnlike conventional monitoring systems, the platform is designed as a complete autonomous decision-making pipeline. Environmental sensors continuously measure pH, EC, temperature, humidity, water level and other critical parameters while cameras monitor plant growth and health. The collected data is transmitted through ESP32-based edge nodes to a cloud backend where AI models perform analysis, generate recommendations and control nutrient dosing and environmental conditions.\n\nThe long-term objective of the project is to develop a reinforcement learning agent capable of learning optimal nutrient scheduling and environmental control policies directly from sensor observations, maximizing crop health while minimizing manual intervention.\n\n## System Architecture\n\nThe platform consists of four tightly integrated layers:\n\n- ESP32-based distributed IoT sensor network\n- Cloud backend built with FastAPI\n- Flutter mobile application for monitoring and control\n- AI services including Computer Vision and Reinforcement Learning\n\nThe backend follows a microservice-oriented architecture using RabbitMQ for asynchronous task processing, Redis for caching, MongoDB for persistent storage and Firebase Cloud Messaging for real-time notifications.\n\n## Artificial Intelligence Components\n\n### Computer Vision\n\nA dedicated vision pipeline performs plant image segmentation and health assessment from images captured inside the greenhouse. The architecture is designed for edge deployment while remaining compatible with future disease detection and growth estimation models.\n\n### Reinforcement Learning\n\nAn ongoing research component investigates reinforcement learning for autonomous nutrient dosing and environmental control. The agent will learn optimal policies for regulating nutrient concentration and greenhouse conditions using continuous feedback from sensors.\n\n## Mobile Application\n\nThe Flutter application provides real-time visualization of sensor readings, actuator control, historical analytics, notification management and remote greenhouse monitoring.\n\n## Research Contributions\n\n- AI-enabled autonomous hydroponics platform\n- Modular cyber-physical system architecture\n- Distributed IoT sensing network\n- Cloud-native backend with asynchronous AI pipelines\n- Edge Computer Vision for plant monitoring\n- Reinforcement Learning based nutrient optimization (ongoing)\n- Scalable architecture supporting future predictive agriculture research\n\n## Current Status\n\nThe complete hardware platform, backend infrastructure, mobile application and computer vision pipeline are operational. Reinforcement learning research is currently under active development.\n\n## Future Work\n\n- Reinforcement learning based autonomous nutrient dosing\n- Predictive crop growth modelling\n- Multi-greenhouse deployment\n- Digital twin simulation environment\n- Explainable AI for agricultural decision support\n- Energy-aware greenhouse optimization"
+,
+  "heroImage": "/projects/hydroponics/hero.jpg",
+
+  "gallery": [
+    {
+      "image": "/projects/hydroponics/system.jpg",
+      "caption": "Complete hydroponics platform integrating sensors, actuators and cloud connectivity."
+    },
+    {
+      "image": "/projects/hydroponics/dashboard.jpg",
+      "caption": "Flutter mobile application for real-time greenhouse monitoring."
+    },
+    {
+      "image": "/projects/hydroponics/backend.jpg",
+      "caption": "Cloud-native backend architecture built using FastAPI, RabbitMQ and Redis."
+    },
+    {
+      "image": "/projects/hydroponics/vision.jpg",
+      "caption": "Computer vision pipeline for plant monitoring and health assessment."
+    },
+    {
+      "image": "/projects/hydroponics/exhibition.jpg",
+      "caption": "Demonstration during the STEAM Design Exhibition."
+    }
+  ],
+
+  "technologies": [
+    "Python",
+    "FastAPI",
+    "Flutter",
+    "ESP32",
+    "Arduino",
+    "MongoDB",
+    "Redis",
+    "RabbitMQ",
+    "OpenCV",
+    "PyTorch",
+    "YOLO",
+    "Firebase",
+    "Docker",
+    "MQTT",
+    "REST API"
+  ],
+
+  "github": null,
+  "paper": null,
+  "poster": null,
+  "presentation": null,
+  "video": null,
+  "website": "https://growlab.safalstha.com.np",
+
+  "architectureDiagram": "/projects/hydroponics/architecture.png",
+
+  "dataset": "Real-world sensor streams collected from the deployed hydroponics system, including pH, EC, temperature, humidity, water level and plant imagery.",
+
+  "futureWork": [
+    "Deep Reinforcement Learning for autonomous nutrient optimization",
+    "Plant disease detection using foundation vision models",
+    "Yield prediction",
+    "Digital twin simulation",
+    "Multi-site greenhouse deployment",
+    "Adaptive climate control",
+    "Large-scale agricultural analytics"
+  ],
+
+  "downloads": []
+},
   {
     "id": "lipinet",
     "slug": "lipinet",

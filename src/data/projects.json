@@ -81,7 +81,7 @@
     ],
     "shortDescription": "A graph neural network based self-supervised framework for reconstructing high-quality 3D facial geometry from monocular RGB images.",
     "longDescription": "## Overview\n\nA graph neural network based self-supervised framework for reconstructing high-quality 3D facial geometry from monocular RGB images.\n\n## Status\n\nResearch\n\n## Research Areas\n\n3D Vision, Graph Neural Networks\n\n## Paper Status\n\nIn Preparation",
-    "heroImage": "/hero.jpg",
+    "heroImage": null,
     "gallery": [],
     "technologies": [],
     "github": null,

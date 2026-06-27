@@ -8826,7 +8826,7 @@ Research
 
 ## Paper Status
 
-In Preparation`,heroImage:"3dfacearc/hero.jpg",gallery:[],technologies:[],github:null,paper:null,poster:null,presentation:null,video:null,website:null,architectureDiagram:null,dataset:null,futureWork:null,downloads:[]},{id:"ancient-script-fsl",slug:"ancient-script-fsl",title:"Few-Shot Learning for Ancient Nepali Scripts",subtitle:"Preserving Nepal's Script Heritage",featured:!1,status:"Research",year:2026,category:"Computer Vision",tags:["Few-Shot Learning","OCR","ResNet12"],shortDescription:"Few-shot recognition of seven ancient Nepali scripts to support the digital preservation of historical manuscripts.",longDescription:`## Overview
+In Preparation`,heroImage:null,gallery:[],technologies:[],github:null,paper:null,poster:null,presentation:null,video:null,website:null,architectureDiagram:null,dataset:null,futureWork:null,downloads:[]},{id:"ancient-script-fsl",slug:"ancient-script-fsl",title:"Few-Shot Learning for Ancient Nepali Scripts",subtitle:"Preserving Nepal's Script Heritage",featured:!1,status:"Research",year:2026,category:"Computer Vision",tags:["Few-Shot Learning","OCR","ResNet12"],shortDescription:"Few-shot recognition of seven ancient Nepali scripts to support the digital preservation of historical manuscripts.",longDescription:`## Overview
 
 Few-shot recognition of seven ancient Nepali scripts to support the digital preservation of historical manuscripts.
 

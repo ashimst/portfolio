@@ -1,0 +1,30 @@
+[
+  {
+    "id": "exp-1",
+    "title": "President",
+    "organization": "Kathmandu University AI Club (KUAIC)",
+    "location": "Kathmandu University",
+    "startDate": "2025-06",
+    "endDate": "Present",
+    "description": "Leading the university's AI club, organizing workshops, research reading groups, hackathons, and industry collaborations.",
+    "highlights": [
+      "Organized weekly paper reading groups on RL, CV, and NLP",
+      "Led 3 hands-on ML workshops for 100+ students",
+      "Established industry mentorship program"
+    ]
+  },
+  {
+    "id": "exp-2",
+    "title": "STEAM Design Grant",
+    "organization": "Ministry of Science, Technology and Innovation",
+    "location": "Kathmandu, Nepal",
+    "startDate": "2026-02",
+    "endDate": "2026-06",
+    "description": "Worked on Automated Hydroponics AI System aided by computer vision and RL control.",
+    "highlights": [
+      "Real-time plant phenotyping using Image Processing Techniques and CNNs",
+      "Reinforcement learning (PPO) for  controller tuning",
+      "Integrated sensor-vision fusion for nutrient deficiency detection"
+    ]
+  }
+]

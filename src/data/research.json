@@ -1,0 +1,56 @@
+[
+  {
+    "id": "rl",
+    "title": "Reinforcement Learning",
+    "description": "Developing adaptive agents for complex decision-making in dynamic environments, with applications in robotics and autonomous systems.",
+    "icon": "Bot",
+    "color": "#171717",
+    "associatedProjects": ["rl-navigation", "multi-agent-coordination"],
+    "associatedNotes": ["understanding-ppo"]
+  },
+  {
+    "id": "gnn",
+    "title": "Graph Neural Networks",
+    "description": "Leveraging graph-structured data for spatial reasoning, environmental modeling, and relational learning across interconnected systems.",
+    "icon": "Network",
+    "color": "#171717",
+    "associatedProjects": ["landslide-gnn"],
+    "associatedNotes": ["graph-neural-networks"]
+  },
+  {
+    "id": "cv",
+    "title": "Computer Vision",
+    "description": "Applying visual perception and object detection techniques to real-world monitoring, inspection, and environmental analysis tasks.",
+    "icon": "Eye",
+    "color": "#171717",
+    "associatedProjects": ["growlab"],
+    "associatedNotes": ["yolo-notes"]
+  },
+  {
+    "id": "env-intel",
+    "title": "Environmental Intelligence",
+    "description": "Using AI and sensor systems to monitor, predict, and respond to environmental phenomena including natural hazards and agricultural systems.",
+    "icon": "Leaf",
+    "color": "#171717",
+    "associatedProjects": ["growlab", "landslide-gnn"],
+    "associatedNotes": []
+  },
+  {
+    "id": "meta-learning",
+    "title": "Meta Learning",
+    "description": "Exploring learning-to-learn paradigms for fast adaptation and generalization across tasks with limited data.",
+    "icon": "Brain",
+    "color": "#171717",
+    "associatedProjects": [],
+    "associatedNotes": ["meta-learning"]
+  },
+  {
+    "id": "embodied-ai",
+    "title": "Embodied AI",
+    "description": "Building agents that perceive and act in physical or simulated environments through integrated sensing and decision-making.",
+    "icon": "Cpu",
+    "color": "#171717",
+    "associatedProjects": ["rl-navigation"],
+    "associatedNotes": []
+  }
+]

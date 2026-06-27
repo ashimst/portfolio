@@ -1,0 +1,22 @@
+[
+  {
+    "id": "edu-1",
+    "degree": "Bachelor of Engineering in Computer Engineering",
+    "institution": "Kathmandu University",
+    "location": "Dhulikhel, Nepal",
+    "startDate": "2022",
+    "endDate": "2026 (Expected)",
+    "description": "Focus on artificial intelligence, machine learning, and computer systems.",
+    "coursework": [
+      "Advanced Machine Learning",
+      "Deep Learning",
+      "Pattern Recognition",
+      "Data Mining",
+      "Large Language Models",
+      "Data Structures and Algorithms",
+      "Database Systems",
+      "Computer Networks"
+    ],
+    "gpa": 3.55
+  }
+]

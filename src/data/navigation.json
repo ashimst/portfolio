@@ -1,0 +1,9 @@
+[
+  { "label": "Home", "path": "/", "icon": "Home" },
+  { "label": "Research", "path": "/research", "icon": "FlaskConical" },
+  { "label": "Projects", "path": "/projects", "icon": "FolderOpen" },
+  { "label": "Publications", "path": "/publications", "icon": "BookOpen" },
+  { "label": "Notes", "path": "/notes", "icon": "FileText" },
+  { "label": "CV", "path": "/cv", "icon": "GraduationCap" },
+  { "label": "Contact", "path": "/contact", "icon": "Mail" }
+]

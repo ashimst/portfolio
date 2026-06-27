@@ -1,0 +1,47 @@
+[
+  {
+    "id": "understanding-ppo",
+    "slug": "understanding-ppo",
+    "title": "Understanding Proximal Policy Optimization",
+    "date": "2025-03-15",
+    "tags": ["Reinforcement Learning", "Policy Gradient", "PPO"],
+    "description": "A deep dive into the PPO algorithm — from policy gradients to clipped surrogate objectives and practical implementation details.",
+    "content": "## Understanding Proximal Policy Optimization (PPO)\n\nPPO is one of the most widely used reinforcement learning algorithms. This note breaks down the key ideas.\n\n### Background: Policy Gradient Methods\n\nPolicy gradient methods optimize a parameterized policy $\\pi_\\theta(a|s)$ by estimating the gradient of the expected return:\n\n$$\\nabla_\\theta J(\\theta) = \\mathbb{E}[\\nabla_\\theta \\log \\pi_\\theta(a|s) \\cdot A(s, a)]$$\n\nwhere $A(s, a)$ is the advantage function.\n\n### The Problem with Vanilla Policy Gradients\n\n- **Large updates** can destroy a good policy\n- **Sample efficiency** is poor\n- No guarantee of monotonic improvement\n\n### TRPO: The Precursor\n\nTRPO constrains the KL divergence between old and new policies. Effective but computationally expensive due to conjugate gradient optimization.\n\n### PPO: Clipped Surrogate Objective\n\nPPO simplifies TRPO with a clipped objective:\n\n```\nL_CLIP(θ) = E[min(r_t(θ) · A_t, clip(r_t(θ), 1-ε, 1+ε) · A_t)]\n```\n\nwhere `r_t(θ) = π_θ(a|s) / π_θ_old(a|s)` is the probability ratio.\n\n### Key Hyperparameters\n\n| Parameter | Typical Value | Effect |\n|-----------|--------------|--------|\n| ε (clip range) | 0.1 - 0.2 | Controls update size |\n| Learning rate | 3e-4 | Step size |\n| GAE λ | 0.95 | Bias-variance tradeoff |\n| Epochs per update | 3 - 10 | Reuse of collected data |\n\n### Implementation Tips\n\n1. **Normalize advantages** within each minibatch\n2. **Use GAE** (Generalized Advantage Estimation) for lower variance\n3. **Entropy bonus** prevents premature convergence\n4. **Value function clipping** stabilizes training\n\n### References\n\n- Schulman et al., \"Proximal Policy Optimization Algorithms\" (2017)\n- Stable-Baselines3 implementation"
+  },
+  {
+    "id": "yolo-notes",
+    "slug": "yolo-notes",
+    "title": "YOLO Object Detection — Architecture Notes",
+    "date": "2024-11-20",
+    "tags": ["Computer Vision", "Object Detection", "YOLO"],
+    "description": "Notes on the YOLO family of object detectors, from YOLOv1 through YOLOv8, covering architectural evolution and deployment strategies.",
+    "content": "## YOLO: You Only Look Once\n\nNotes on the evolution of the YOLO family of real-time object detectors.\n\n### YOLOv1 (2016)\n\n- Single-shot detection: divides image into S×S grid\n- Each cell predicts B bounding boxes + confidence + C class probabilities\n- Revolutionary speed but limited accuracy\n\n### YOLOv3 (2018)\n\n- Feature Pyramid Network (FPN) for multi-scale detection\n- Darknet-53 backbone\n- Binary cross-entropy for multi-label classification\n\n### YOLOv5 (2020)\n\n- PyTorch-native implementation (Ultralytics)\n- Automatic anchor computation\n- Mosaic data augmentation\n- Much easier to train and deploy\n\n### YOLOv8 (2023)\n\n- Anchor-free detection head\n- Decoupled head (separate classification and regression)\n- Task-specific heads: detection, segmentation, pose, classification\n- State-of-the-art speed/accuracy tradeoff\n\n### Deployment Considerations\n\n- **TensorRT** for NVIDIA GPU inference\n- **ONNX Runtime** for cross-platform deployment\n- **TFLite** for mobile and edge devices\n- **OpenVINO** for Intel hardware\n\n### Key Takeaway\n\nYOLO's evolution shows the trend from hand-crafted components (anchors, NMS) toward learned, end-to-end architectures."
+  },
+  {
+    "id": "graph-neural-networks",
+    "slug": "graph-neural-networks",
+    "title": "Graph Neural Networks — A Primer",
+    "date": "2025-01-10",
+    "tags": ["Graph Neural Networks", "Deep Learning", "GNN"],
+    "description": "An introduction to graph neural networks covering message passing, common architectures (GCN, GAT, GraphSAGE), and applications in spatial data.",
+    "content": "## Graph Neural Networks\n\nA primer on GNNs and their application to non-Euclidean data.\n\n### Why Graphs?\n\nMany real-world systems are naturally represented as graphs:\n- Social networks\n- Molecular structures\n- Transportation networks\n- Terrain and geological maps\n\nCNNs operate on regular grids. GNNs generalize convolution to arbitrary graph structures.\n\n### Message Passing Framework\n\nMost GNNs follow the message passing paradigm:\n\n1. **Aggregate**: Collect messages from neighbors\n2. **Update**: Combine aggregated message with node's own features\n3. **Repeat**: Stack multiple layers for multi-hop reasoning\n\n### Common Architectures\n\n**GCN (Graph Convolutional Network)**\n- Spectral approach simplified to spatial\n- Simple mean aggregation with normalization\n\n**GAT (Graph Attention Network)**\n- Learned attention weights over neighbors\n- Different neighbors contribute differently\n\n**GraphSAGE**\n- Sampling-based approach for large graphs\n- Inductive: can generalize to unseen nodes\n\n### Applications in My Research\n\n- **Landslide susceptibility**: Terrain units as nodes, geological adjacency as edges\n- **Environmental monitoring**: Sensor networks as spatial graphs\n\n### Tools\n\n- PyTorch Geometric\n- DGL (Deep Graph Library)\n- NetworkX (graph construction and analysis)"
+  },
+  {
+    "id": "neurips-reading",
+    "slug": "neurips-reading",
+    "title": "NeurIPS 2024 Reading Notes",
+    "date": "2024-12-20",
+    "tags": ["Conference", "NeurIPS", "Reading Notes"],
+    "description": "Selected reading notes from NeurIPS 2024 papers on reinforcement learning, graph learning, and foundation models.",
+    "content": "## NeurIPS 2024 — Selected Reading Notes\n\nKey papers and takeaways from NeurIPS 2024.\n\n### Theme 1: Foundation Models Meet RL\n\nSeveral papers explored using LLM/VLM representations for RL:\n- Pre-trained vision encoders as state representations\n- Language-conditioned reward shaping\n- Foundation models as world models\n\n### Theme 2: Graph Learning at Scale\n\n- New sampling strategies for billion-node graphs\n- Graph transformers competing with message-passing GNNs\n- Temporal graph networks for dynamic systems\n\n### Theme 3: AI for Science\n\n- Growing track on ML for earth sciences\n- Climate modeling with neural operators\n- Molecular property prediction improvements\n\n### Papers to Read in Detail\n\n- [ ] \"Scaling Graph Neural Networks to Billion Nodes\"\n- [ ] \"Language-Guided Reinforcement Learning\"\n- [ ] \"Neural Operators for Climate Downscaling\"\n- [ ] \"Efficient Fine-tuning of Foundation Models for Robotics\"\n\n### Personal Takeaways\n\n1. The gap between foundation models and RL is closing rapidly\n2. Graph learning is moving toward transformer-like architectures\n3. AI for science is becoming a first-class research area"
+  },
+  {
+    "id": "meta-learning",
+    "slug": "meta-learning",
+    "title": "Meta Learning — Learning to Learn",
+    "date": "2025-02-05",
+    "tags": ["Meta Learning", "Few-Shot Learning", "MAML"],
+    "description": "Notes on meta-learning approaches including MAML, Prototypical Networks, and their applications in few-shot learning scenarios.",
+    "content": "## Meta Learning: Learning to Learn\n\nMeta-learning algorithms learn how to learn efficiently from limited data.\n\n### Core Idea\n\nInstead of learning a single task, learn a learning algorithm that can quickly adapt to new tasks from few examples.\n\n### Key Approaches\n\n**MAML (Model-Agnostic Meta-Learning)**\n- Learns an initialization that can be fine-tuned in few gradient steps\n- Task-agnostic: works with any differentiable model\n- Inner loop: task-specific adaptation\n- Outer loop: meta-parameter optimization\n\n**Prototypical Networks**\n- Learn an embedding space where classification is nearest-neighbor\n- Class prototype = mean of support set embeddings\n- Simple and effective for few-shot classification\n\n**Matching Networks**\n- Attention-based approach over support set\n- Contextual embeddings using bi-LSTM\n\n### Applications\n\n- Few-shot image classification\n- Quick robot adaptation\n- Drug discovery with limited data\n- Low-resource NLP\n\n### Challenges\n\n- Task distribution design\n- Computational cost of bi-level optimization\n- Generalization to out-of-distribution tasks\n\n### Connection to My Research\n\nMeta-learning could enable RL agents to quickly adapt to new environments — relevant to sim-to-real transfer in my navigation work."
+  }
+]

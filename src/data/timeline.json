@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2025-06",
+    "title": "President — KUAIC",
+    "description": "Elected as President of Kathmandu University AI Club, leading workshops, research reading groups, and industry collaborations.",
+    "type": "leadership",
+    "icon": "Award"
+  },
+  {
+    "date": "2026-02",
+    "title": "STEAM Design Grant",
+    "description": "Awarded STEAM Design Grant for the  smart hydroponics project, funding further development of the AI monitoring pipeline.",
+    "type": "award",
+    "icon": "Trophy"
+  },
+  {
+    "date": "2022-12",
+    "title": "Began B.Tech in AI",
+    "description": "Started B.Tech in Artificial Intelligence ",
+    "type": "milestone",
+    "icon": "Star"
+  }
+]

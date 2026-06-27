@@ -1,0 +1,9 @@
+[
+  { "platform": "GitHub", "url": "https://github.com/ashimst", "icon": "Github" },
+  { "platform": "LinkedIn", "url": "https://linkedin.com/in/ashimshrestha", "icon": "Linkedin" },
+  { "platform": "Google Scholar", "url": "https://scholar.google.com/", "icon": "GoogleScholar" },
+  { "platform": "ORCID", "url": "https://orcid.org/0000-0000-0000-0000", "icon": "Orcid" },
+  { "platform": "ResearchGate", "url": "https://www.researchgate.net/", "icon": "Researchgate" },
+  { "platform": "Email", "url": "mailto:ashim@example.com", "icon": "Mail" }
+]
+

@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "greeting": "Hello, I'm",
+    "researchStatement": "Building intelligent cyber-physical systems through Reinforcement Learning, Computer Vision, Graph Learning and Environmental Intelligence.",
+    "primaryButton": { "label": "View Research", "path": "/research" },
+    "secondaryButton": { "label": "Download CV", "path": "/resume.pdf", "external": true }
+  },
+  "sectionTitles": {
+    "researchFocus": "Current Research Focus",
+    "featuredProjects": "Featured Projects",
+    "researchAreas": "Research Areas",
+    "timeline": "Timeline",
+    "latestNews": "Latest News"
+  }
+}

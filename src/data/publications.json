@@ -1,0 +1,123 @@
+[
+  {
+    "id": "lipinet-hcr",
+    "title": "Rethinking Handwritten Character Recognition",
+    "authors": [
+      "Ashim Shrestha",
+      "..."
+    ],
+    "venue": "NeurIPS 2026",
+    "year": 2026,
+    "status": "Submitted",
+    "type": "Conference Paper",
+    "researchArea": [
+      "Computer Vision",
+      "OCR",
+      "Handwritten Text Recognition",
+      "Deep Learning"
+    ],
+    "abstract": "Non-Latin handwritten character recognition (HCR) remains significantly understudied, with most existing approaches treating the problem as generic image classification. We introduce LipiNet, a unified multi-script architecture that explicitly incorporates script-geometric structural priors through Persistent Scaffold Injection (PSI) and complementary architectural components for spatial reasoning. Across fourteen benchmarks spanning eight writing systems, LipiNet consistently outperforms existing baselines while using only 3.9M parameters, demonstrating that explicitly encoding script geometry yields both higher accuracy and improved parameter efficiency.",
+    "pdf": null,
+    "code": null,
+    "poster": null,
+    "slides": null,
+    "project": "lipinet",
+    "keywords": [
+      "OCR",
+      "HTR",
+      "Structural Priors",
+      "CNN",
+      "Multi-Script Recognition"
+    ]
+  },
+  {
+    "id": "hydroponics-rl",
+    "title": "Adaptive Reinforcement Learning for Autonomous Hydroponic Nutrient and Environment Control",
+    "authors": [
+      "Ashim Shrestha",
+      "..."
+    ],
+    "venue": null,
+    "year": 2026,
+    "status": "In Preparation",
+    "type": "Research Paper",
+    "researchArea": [
+      "Reinforcement Learning",
+      "IoT",
+      "Precision Agriculture",
+      "Cyber-Physical Systems"
+    ],
+    "abstract": "This work investigates reinforcement learning for adaptive hydroponic nutrient dosing and environmental control. The proposed system combines sensor-driven state estimation with autonomous control policies to optimize plant growth while minimizing manual intervention in controlled-environment agriculture.",
+    "pdf": null,
+    "code": null,
+    "poster": null,
+    "slides": null,
+    "project": "growlab",
+    "keywords": [
+      "RL",
+      "Hydroponics",
+      "IoT",
+      "Smart Agriculture"
+    ]
+  },
+  {
+    "id": "3dfacearc",
+    "title": "3DFaceARC: A Self-Supervised Graph Neural Network Framework for Monocular 3D Face Reconstruction",
+    "authors": [
+      "Ashim Shrestha"
+    ],
+    "venue": null,
+    "year": 2026,
+    "status": "In Preparation",
+    "type": "Research Paper",
+    "researchArea": [
+      "Computer Vision",
+      "3D Vision",
+      "Graph Neural Networks",
+      "Self-Supervised Learning"
+    ],
+    "abstract": "3DFaceARC is an end-to-end self-supervised framework for reconstructing high-fidelity 3D face models from unconstrained single-view RGB images without requiring any 3D supervision. The framework integrates a ResNet50 encoder, Basel Face Model decoder, Graph Attention Network refinement, automatic pseudo-landmark generation, and a seven-loss self-supervised optimization strategy to produce realistic 3D facial geometry from ordinary photographs.",
+    "pdf": null,
+    "code": null,
+    "poster": null,
+    "slides": null,
+    "project": "3dfacearc",
+    "keywords": [
+      "3D Reconstruction",
+      "GNN",
+      "Graph Attention",
+      "Computer Vision",
+      "Self-Supervised Learning"
+    ]
+  },
+  {
+    "id": "ancient-script-fsl",
+    "title": "Preserving Nepal's Script Heritage: Few-Shot Learning of Nepali Ancient Scripts",
+    "authors": [
+      "Ashim Shrestha",
+      "..."
+    ],
+    "venue": null,
+    "year": 2026,
+    "status": "In Preparation",
+    "type": "Research Paper",
+    "researchArea": [
+      "Few-Shot Learning",
+      "Computer Vision",
+      "OCR",
+      "Digital Heritage"
+    ],
+    "abstract": "This work introduces a dataset comprising 8,200 handwritten character images spanning 328 classes from seven ancient Nepali scripts. We evaluate multiple few-shot learning algorithms including Prototypical Networks, Relation Networks, Laplacian-Shot, and Simple-Shot, demonstrating strong recognition performance in extremely low-resource settings while contributing toward the preservation of Nepal's historical manuscript heritage.",
+    "pdf": null,
+    "code": null,
+    "poster": null,
+    "slides": null,
+    "project": "ancient-script-fsl",
+    "keywords": [
+      "Few-Shot Learning",
+      "OCR",
+      "Cultural Heritage",
+      "Low Resource AI"
+    ]
+  }
+]

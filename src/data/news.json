@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2026-06-21",
+    "title": "Presented Automated Hydroponics AI at STEAM Design Exhibition 2026",
+    "description": "Exhibited the Automated Hydroponics AI system at the STEAM Design Exhibition and received a certificate of appreciation from Hon. Minister Mahabir Pun.",
+    "category": "Exhibition",
+    "link": null,
+    "featured": true
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Participated in PCB Design Workshop",
+    "description": "Completed the PCB Design Workshop organized by the IoT R&D Lab, Kathmandu University, focusing on practical PCB design and embedded hardware development.",
+    "category": "Workshop",
+    "link": null,
+    "featured": false
+  },
+  {
+    "date": "2026-01-15",
+    "title": "Organized AI Conclave 2026",
+    "description": "Successfully organized AI Conclave 2026 as President of the Kathmandu University AI Club (KUAIC), bringing together students, researchers, and industry professionals through technical sessions, competitions, and networking events.",
+    "category": "Leadership",
+    "link": null,
+    "featured": true
+  },
+  {
+    "date": "2026-02",
+    "title": "Awarded STEAM Design Grant",
+    "description": "Received the STEAM Design Grant to develop the Automated Hydroponics AI system integrating reinforcement learning, computer vision, and IoT technologies.",
+    "category": "Award",
+    "link": null,
+    "featured": true
+  }
+]

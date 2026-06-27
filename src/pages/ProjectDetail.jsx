@@ -33,6 +33,10 @@ export default function ProjectDetail() {
     { label: 'Video', url: project.video, icon: ExternalLink },
   ].filter((r) => r.url);
 
+  // Determine which images to show
+  const hasGallery = project.gallery && project.gallery.length > 0;
+  const images = hasGallery ? project.gallery : (project.heroImage ? [project.heroImage] : []);
+
   return (
     <>
       <SEO title={project.title} description={project.shortDescription} />
@@ -70,19 +74,32 @@ export default function ProjectDetail() {
           </div>
         </AnimatedSection>
 
-        {/* Hero image */}
+        {/* Gallery / Hero Image */}
         <AnimatedSection delay={0.1}>
-          <div className="aspect-video bg-surface-alt rounded-lg border border-border flex items-center justify-center mb-10">
-            {project.heroImage ? (
-              <img
-                src={project.heroImage}
-                alt={project.title}
-                className="w-full h-full rounded-lg object-cover"
-              />
-            ) : (
+          {images.length > 0 ? (
+            <div
+              className={`grid gap-4 mb-10 ${
+                images.length === 1 ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2'
+              }`}
+            >
+              {images.map((src, idx) => (
+                <div
+                  key={idx}
+                  className="aspect-video bg-surface-alt rounded-lg border border-border overflow-hidden"
+                >
+                  <img
+                    src={src}
+                    alt={`${project.title} ${images.length > 1 ? `- image ${idx + 1}` : ''}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="aspect-video bg-surface-alt rounded-lg border border-border flex items-center justify-center mb-10">
               <FolderOpen size={36} className="text-text-tertiary/30" />
-            )}
-          </div>
+            </div>
+          )}
         </AnimatedSection>
 
         {/* Long description (Markdown) */}
